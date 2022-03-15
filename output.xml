@@ -1,61 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.8.10 on linux)" generated="20220315 15:53:37.054" rpa="false" schemaversion="2">
-<suite id="s1" name="Demo6 Redbus Suite" source="/home/indranee/Robotframework/selenium_suite/demo6_redbus_suite.robot">
+<robot generator="Robot 4.1.3 (Python 3.8.10 on linux)" generated="20220315 17:15:01.952" rpa="false" schemaversion="2">
+<suite id="s1" name="Demo7 Nasscom Suite" source="/home/indranee/Robotframework/selenium_suite/demo7_nasscom_suite.robot">
 <test id="s1-t1" name="TC1">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=chrome</arg>
 <arg>executable_path=${EXECDIR}${/}driver${/}chromedriver</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220315 15:53:37.142" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220315 15:53:37.141" endtime="20220315 15:53:37.899"/>
+<msg timestamp="20220315 17:15:02.040" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220315 17:15:02.039" endtime="20220315 17:15:02.825"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220315 15:53:37.899" endtime="20220315 15:53:38.031"/>
+<status status="PASS" starttime="20220315 17:15:02.826" endtime="20220315 17:15:02.960"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
+<arg>20s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220315 15:53:38.031" endtime="20220315 15:53:38.032"/>
+<status status="PASS" starttime="20220315 17:15:02.960" endtime="20220315 17:15:02.961"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
-<arg>url=https://www.redbus.in/</arg>
+<arg>url=https://nasscom.in/nasscom-membership</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220315 15:53:38.032" level="INFO">Opening url 'https://www.redbus.in/'</msg>
-<status status="PASS" starttime="20220315 15:53:38.032" endtime="20220315 15:53:45.179"/>
+<msg timestamp="20220315 17:15:02.961" level="INFO">Opening url 'https://nasscom.in/nasscom-membership'</msg>
+<status status="PASS" starttime="20220315 17:15:02.961" endtime="20220315 17:15:06.210"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>id=i-icon-profile</arg>
+<arg>xpath=//label[@for='edit-field-membership-type-und-1203']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 15:53:45.179" level="INFO">Clicking element 'id=i-icon-profile'.</msg>
-<status status="PASS" starttime="20220315 15:53:45.179" endtime="20220315 15:53:45.214"/>
+<msg timestamp="20220315 17:15:06.211" level="INFO">Clicking element 'xpath=//label[@for='edit-field-membership-type-und-1203']'.</msg>
+<status status="PASS" starttime="20220315 17:15:06.211" endtime="20220315 17:15:06.248"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=signInLink</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 15:53:45.215" level="INFO">Clicking element 'id=signInLink'.</msg>
-<status status="PASS" starttime="20220315 15:53:45.215" endtime="20220315 15:53:45.298"/>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id=edit-field-business-focus-inst-und-970</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220315 17:15:06.248" level="INFO">Selecting checkbox 'id=edit-field-business-focus-inst-und-970'.</msg>
+<status status="PASS" starttime="20220315 17:15:06.248" endtime="20220315 17:15:06.594"/>
 </kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>xpath=//iframe[@class='modalIframe']</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<msg timestamp="20220315 15:53:45.299" level="INFO">Selecting frame 'xpath=//iframe[@class='modalIframe']'.</msg>
-<status status="PASS" starttime="20220315 15:53:45.298" endtime="20220315 15:53:46.674"/>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id=edit-field-business-focus-inst-und-968</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220315 17:15:06.595" level="INFO">Selecting checkbox 'id=edit-field-business-focus-inst-und-968'.</msg>
+<status status="PASS" starttime="20220315 17:15:06.595" endtime="20220315 17:15:06.667"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>id=mobileNoInp</arg>
-<arg>888777</arg>
+<arg>xpath=//input[@id='edit-title']</arg>
+<arg>LT</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 15:53:46.674" level="INFO">Typing text '888777' into text field 'id=mobileNoInp'.</msg>
-<status status="PASS" starttime="20220315 15:53:46.674" endtime="20220315 15:53:46.758"/>
+<msg timestamp="20220315 17:15:06.667" level="INFO">Typing text 'LT' into text field 'xpath=//input[@id='edit-title']'.</msg>
+<status status="PASS" starttime="20220315 17:15:06.667" endtime="20220315 17:15:06.745"/>
 </kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20220315 15:53:46.758" endtime="20220315 15:53:46.760"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//textarea[@id='edit-field-address-line-1-und-0-value']</arg>
+<arg>20 Chennai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220315 17:15:06.745" level="INFO">Typing text '20 Chennai' into text field 'xpath=//textarea[@id='edit-field-address-line-1-und-0-value']'.</msg>
+<status status="PASS" starttime="20220315 17:15:06.745" endtime="20220315 17:15:06.822"/>
 </kw>
-<status status="PASS" starttime="20220315 15:53:37.141" endtime="20220315 15:53:46.760"/>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>xpath=//select[@id='edit-field-state-member-und']</arg>
+<arg>Tamil Nadu</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220315 17:15:06.822" level="INFO">Selecting options from selection list 'xpath=//select[@id='edit-field-state-member-und']' by label Tamil Nadu.</msg>
+<status status="PASS" starttime="20220315 17:15:06.822" endtime="20220315 17:15:06.876"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>xpath=//select[@id='edit-field-city-membership-und']</arg>
+<arg>Chennai</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220315 17:15:06.877" level="INFO">Selecting options from selection list 'xpath=//select[@id='edit-field-city-membership-und']' by label Chennai.</msg>
+<status status="PASS" starttime="20220315 17:15:06.876" endtime="20220315 17:15:06.921"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>id=edit-field-memorandum-article-of-asso-und-0-upload</arg>
+<arg>${EXECDIR}${/}test.pdf</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220315 17:15:06.921" level="INFO">Sending /home/indranee/Robotframework/test.pdf to browser.</msg>
+<status status="PASS" starttime="20220315 17:15:06.921" endtime="20220315 17:15:06.953"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//label[@for='edit-field-mode-of-payment-und-0']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220315 17:15:06.953" level="INFO">Clicking element 'xpath=//label[@for='edit-field-mode-of-payment-und-0']'.</msg>
+<status status="PASS" starttime="20220315 17:15:06.953" endtime="20220315 17:15:06.985"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>xpath=//input[@id='edit-field-code-of-conduct-und-0']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220315 17:15:06.985" level="INFO">Selecting checkbox 'xpath=//input[@id='edit-field-code-of-conduct-und-0']'.</msg>
+<status status="PASS" starttime="20220315 17:15:06.985" endtime="20220315 17:15:07.030"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@id='edit-preview']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220315 17:15:07.031" level="INFO">Clicking element 'xpath=//input[@id='edit-preview']'.</msg>
+<status status="PASS" starttime="20220315 17:15:07.031" endtime="20220315 17:15:07.097"/>
+</kw>
+<status status="PASS" starttime="20220315 17:15:02.039" endtime="20220315 17:15:07.097"/>
 </test>
-<status status="PASS" starttime="20220315 15:53:37.055" endtime="20220315 15:53:46.761"/>
+<status status="PASS" starttime="20220315 17:15:01.952" endtime="20220315 17:15:07.099"/>
 </suite>
 <statistics>
 <total>
@@ -64,7 +106,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo6 Redbus Suite">Demo6 Redbus Suite</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo7 Nasscom Suite">Demo7 Nasscom Suite</stat>
 </suite>
 </statistics>
 <errors>
