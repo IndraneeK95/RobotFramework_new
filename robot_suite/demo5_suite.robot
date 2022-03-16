@@ -17,3 +17,5 @@ TC2
 TC3
     Log To Console    ${COLORS}
     Log To Console    ${COLORS}[0]
+    ${len}      Get Length    ${COLORS}
+    Log To Console    ${len}
