@@ -43,3 +43,8 @@ TC3
     Go To    url=https://nasscom.in/nasscom-membership
     Mouse Over    xpath=//a[text()='Membership']
     Click Element    xpath=//a[text()='Members Listing']
+    Wait Until Page Contains Element    xpath=//input[@id='edit-title']
+    ${title}    Get Title
+    Log To Console    ${title}
+    Should Be Equal     ${title}    Members Listing | NASSCOM
+
