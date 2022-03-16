@@ -1,110 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.8.10 on linux)" generated="20220316 12:18:11.860" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.8.10 on linux)" generated="20220316 12:49:38.561" rpa="false" schemaversion="2">
 <suite id="s1" name="Demo9 Royal Suite" source="/home/indranee/Robotframework/selenium_suite/demo9_royal_suite.robot">
 <test id="s1-t1" name="TC1">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=chrome</arg>
 <arg>executable_path=${EXECDIR}${/}driver${/}chromedriver</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220316 12:18:11.947" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220316 12:18:11.946" endtime="20220316 12:18:12.721"/>
+<msg timestamp="20220316 12:49:38.657" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220316 12:49:38.656" endtime="20220316 12:49:39.424"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220316 12:18:12.721" endtime="20220316 12:18:12.863"/>
+<status status="PASS" starttime="20220316 12:49:39.424" endtime="20220316 12:49:39.557"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220316 12:18:12.863" endtime="20220316 12:18:12.864"/>
+<status status="PASS" starttime="20220316 12:49:39.557" endtime="20220316 12:49:39.560"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>1s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220316 12:18:12.864" endtime="20220316 12:18:12.864"/>
+<status status="PASS" starttime="20220316 12:49:39.561" endtime="20220316 12:49:39.561"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=https://www.royalcaribbean.com/account/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220316 12:18:12.865" level="INFO">Opening url 'https://www.royalcaribbean.com/account/'</msg>
-<status status="PASS" starttime="20220316 12:18:12.865" endtime="20220316 12:18:15.924"/>
+<msg timestamp="20220316 12:49:39.562" level="INFO">Opening url 'https://www.royalcaribbean.com/account/'</msg>
+<status status="PASS" starttime="20220316 12:49:39.562" endtime="20220316 12:49:44.348"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//a[normalize-space()='Create an account']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220316 12:18:15.924" level="INFO">Clicking element 'xpath=//a[normalize-space()='Create an account']'.</msg>
-<status status="PASS" starttime="20220316 12:18:15.924" endtime="20220316 12:18:20.859"/>
+<msg timestamp="20220316 12:49:44.349" level="INFO">Clicking element 'xpath=//a[normalize-space()='Create an account']'.</msg>
+<status status="PASS" starttime="20220316 12:49:44.348" endtime="20220316 12:49:49.633"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//input[@data-placeholder='First name/Given name']</arg>
 <arg>Indranee</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220316 12:18:20.859" level="INFO">Typing text 'Indranee' into text field 'xpath=//input[@data-placeholder='First name/Given name']'.</msg>
-<status status="PASS" starttime="20220316 12:18:20.859" endtime="20220316 12:18:23.964"/>
+<msg timestamp="20220316 12:49:49.633" level="INFO">Typing text 'Indranee' into text field 'xpath=//input[@data-placeholder='First name/Given name']'.</msg>
+<status status="PASS" starttime="20220316 12:49:49.633" endtime="20220316 12:49:53.235"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//input[@data-placeholder='Last name/Surname']</arg>
 <arg>Kashyap</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220316 12:18:23.965" level="INFO">Typing text 'Kashyap' into text field 'xpath=//input[@data-placeholder='Last name/Surname']'.</msg>
-<status status="PASS" starttime="20220316 12:18:23.964" endtime="20220316 12:18:27.136"/>
+<msg timestamp="20220316 12:49:53.236" level="INFO">Typing text 'Kashyap' into text field 'xpath=//input[@data-placeholder='Last name/Surname']'.</msg>
+<status status="PASS" starttime="20220316 12:49:53.236" endtime="20220316 12:49:56.402"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[text()='Month']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220316 12:18:27.137" level="INFO">Clicking element 'xpath=//span[text()='Month']'.</msg>
-<status status="PASS" starttime="20220316 12:18:27.136" endtime="20220316 12:18:29.253"/>
+<msg timestamp="20220316 12:49:56.402" level="INFO">Clicking element 'xpath=//span[text()='Month']'.</msg>
+<status status="PASS" starttime="20220316 12:49:56.402" endtime="20220316 12:49:58.512"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[contains(text(),'April')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220316 12:18:29.253" level="INFO">Clicking element 'xpath=//span[contains(text(),'April')]'.</msg>
-<status status="PASS" starttime="20220316 12:18:29.253" endtime="20220316 12:18:31.320"/>
+<msg timestamp="20220316 12:49:58.512" level="INFO">Clicking element 'xpath=//span[contains(text(),'April')]'.</msg>
+<status status="PASS" starttime="20220316 12:49:58.512" endtime="20220316 12:50:00.577"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[text()='Day']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220316 12:18:31.320" level="INFO">Clicking element 'xpath=//span[text()='Day']'.</msg>
-<status status="PASS" starttime="20220316 12:18:31.320" endtime="20220316 12:18:33.401"/>
+<msg timestamp="20220316 12:50:00.578" level="INFO">Clicking element 'xpath=//span[text()='Day']'.</msg>
+<status status="PASS" starttime="20220316 12:50:00.578" endtime="20220316 12:50:02.667"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=//span[contains(text(),'26')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220316 12:50:02.668" endtime="20220316 12:50:04.956"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//span[contains(text(),'4')]</arg>
+<arg>xpath=//span[contains(text(),'26')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220316 12:18:33.402" level="INFO">Clicking element 'xpath=//span[contains(text(),'4')]'.</msg>
-<status status="PASS" starttime="20220316 12:18:33.401" endtime="20220316 12:18:35.480"/>
+<msg timestamp="20220316 12:50:04.957" level="INFO">Clicking element 'xpath=//span[contains(text(),'26')]'.</msg>
+<status status="PASS" starttime="20220316 12:50:04.956" endtime="20220316 12:50:07.025"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//input[@data-placeholder='Year']</arg>
 <arg>1995</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220316 12:18:35.480" level="INFO">Typing text '1995' into text field 'xpath=//input[@data-placeholder='Year']'.</msg>
-<status status="PASS" starttime="20220316 12:18:35.480" endtime="20220316 12:18:38.619"/>
+<msg timestamp="20220316 12:50:07.026" level="INFO">Typing text '1995' into text field 'xpath=//input[@data-placeholder='Year']'.</msg>
+<status status="PASS" starttime="20220316 12:50:07.025" endtime="20220316 12:50:10.143"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[text()='Country/Region of residence']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220316 12:18:38.620" level="INFO">Clicking element 'xpath=//span[text()='Country/Region of residence']'.</msg>
-<status status="PASS" starttime="20220316 12:18:38.620" endtime="20220316 12:18:40.733"/>
+<msg timestamp="20220316 12:50:10.144" level="INFO">Clicking element 'xpath=//span[text()='Country/Region of residence']'.</msg>
+<status status="PASS" starttime="20220316 12:50:10.143" endtime="20220316 12:50:12.264"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[contains(text(),'India')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220316 12:18:40.733" level="INFO">Clicking element 'xpath=//span[contains(text(),'India')]'.</msg>
-<status status="PASS" starttime="20220316 12:18:40.733" endtime="20220316 12:18:42.792"/>
+<msg timestamp="20220316 12:50:12.265" level="INFO">Clicking element 'xpath=//span[contains(text(),'India')]'.</msg>
+<status status="PASS" starttime="20220316 12:50:12.264" endtime="20220316 12:50:14.361"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@data-placeholder='Email address']</arg>
+<arg>kashyapindranee25@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220316 12:50:14.361" level="INFO">Typing text 'kashyapindranee25@gmail.com' into text field 'xpath=//input[@data-placeholder='Email address']'.</msg>
+<status status="PASS" starttime="20220316 12:50:14.361" endtime="20220316 12:50:17.600"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[text()='Select one security question']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220316 12:50:17.601" level="INFO">Clicking element 'xpath=//span[text()='Select one security question']'.</msg>
+<status status="PASS" starttime="20220316 12:50:17.601" endtime="20220316 12:50:19.706"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=//span[contains(text(),' What elementary school did you go to? ')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220316 12:50:19.706" endtime="20220316 12:50:21.981"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[contains(text(),' What elementary school did you go to? ')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220316 12:50:21.982" level="INFO">Clicking element 'xpath=//span[contains(text(),' What elementary school did you go to? ')]'.</msg>
+<status status="PASS" starttime="20220316 12:50:21.981" endtime="20220316 12:50:24.047"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@data-placeholder='Answer']</arg>
+<arg>Saint Marys</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220316 12:50:24.047" level="INFO">Typing text 'Saint Marys' into text field 'xpath=//input[@data-placeholder='Answer']'.</msg>
+<status status="PASS" starttime="20220316 12:50:24.047" endtime="20220316 12:50:27.175"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220316 12:18:47.793" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220316 12:18:42.792" endtime="20220316 12:18:47.793"/>
+<msg timestamp="20220316 12:50:32.176" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220316 12:50:27.176" endtime="20220316 12:50:32.177"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220316 12:18:47.794" endtime="20220316 12:18:48.850"/>
+<status status="PASS" starttime="20220316 12:50:32.177" endtime="20220316 12:50:33.235"/>
 </kw>
-<status status="PASS" starttime="20220316 12:18:11.946" endtime="20220316 12:18:48.850"/>
+<status status="PASS" starttime="20220316 12:49:38.656" endtime="20220316 12:50:33.235"/>
 </test>
-<status status="PASS" starttime="20220316 12:18:11.860" endtime="20220316 12:18:48.851"/>
+<status status="PASS" starttime="20220316 12:49:38.561" endtime="20220316 12:50:33.237"/>
 </suite>
 <statistics>
 <total>
