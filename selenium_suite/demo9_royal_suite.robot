@@ -29,6 +29,8 @@ TC1
     Scroll Element Into View     xpath=//span[contains(text(),' What elementary school did you go to? ')]
     Click Element    xpath=//span[contains(text(),' What elementary school did you go to? ')]
     Input Text    xpath=//input[@data-placeholder='Answer']   Saint Marys
+    Select Checkbox     //input[@type='checkbox']
+    Click Element    xpath=//button[normalize-space()='Done']
 
 
     Sleep       5s
