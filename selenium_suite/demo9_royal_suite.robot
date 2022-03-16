@@ -18,5 +18,6 @@ TC1
     Click Element    xpath=//span[contains(text(),'April')]
     Click Element    xpath=//span[text()='Day']
     Click Element    xpath=//span[contains(text(),'4')]
+    Input Text    xpath=//input[@data-placeholder='Year']   1995
 
     Sleep       5s
