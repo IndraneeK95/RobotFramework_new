@@ -46,5 +46,5 @@ TC3
     Wait Until Page Contains Element    xpath=//input[@id='edit-title']
     ${title}    Get Title
     Log To Console    ${title}
-    Should Be Equal     ${title}    Members Listing | NASSCOM
+    Should Be Equal     ${title}  Members Listing | NASSCOM
 
