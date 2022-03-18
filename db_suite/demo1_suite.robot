@@ -14,4 +14,8 @@ TC1
     Log To Console    ${count}
 
 TC2
-    Row Count Is Equal To X    Select * from Products    50
+    Row Count Is Equal To X    Select * from Products    62
+    
+TC3
+    Execute Sql String    Insert into Products (product_id,productname,description) values (67,'box','justname')
+    Row Count Is Equal To X    Select * from Products where product_id=67    1
