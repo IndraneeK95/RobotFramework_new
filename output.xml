@@ -1,55 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.8.10 on linux)" generated="20220318 12:56:30.139" rpa="false" schemaversion="2">
-<suite id="s1" name="Demo1 Suite" source="/home/indranee/Robotframework/db_suite/demo1_suite.robot">
-<kw name="Connect To Database" library="DatabaseLibrary" type="SETUP">
-<arg>dbapiModuleName=pymysql</arg>
-<arg>dbName=dbfree_db</arg>
-<arg>dbUsername=dbfree_db</arg>
-<arg>dbPassword=12345678</arg>
-<arg>dbHost=db4free.net</arg>
-<arg>dbPort=3306</arg>
-<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
-connect to the database using `dbName`, `dbUsername`, and `dbPassword`.</doc>
-<msg timestamp="20220318 12:56:30.165" level="INFO">Connecting using : pymysql.connect(db=dbfree_db, user=dbfree_db, passwd=12345678, host=db4free.net, port=3306, charset=None) </msg>
-<status status="PASS" starttime="20220318 12:56:30.157" endtime="20220318 12:56:36.283"/>
+<robot generator="Robot 4.1.3 (Python 3.8.10 on linux)" generated="20220318 16:11:29.902" rpa="false" schemaversion="2">
+<suite id="s1" name="Demo11 Autoit Suite" source="/home/indranee/Robotframework/selenium_suite/demo11_autoit_suite.robot">
+<test id="s1-t1" name="TC1">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<arg>executable_path=${EXECDIR}${/}driver${/}chromedriver</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220318 16:11:50.073" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220318 16:11:50.072" endtime="20220318 16:11:50.855"/>
 </kw>
-<test id="s1-t1" name="TC3">
-<kw name="Execute Sql String" library="DatabaseLibrary">
-<arg>Insert into Products (product_id,productname,description) values (67,'box','justname')</arg>
-<doc>Executes the sqlString as SQL commands. Useful to pass arguments to your sql. Set optional input `sansTran` to
-True to run command without an explicit transaction commit or rollback.</doc>
-<msg timestamp="20220318 12:56:36.284" level="INFO">Executing : Execute SQL String  |  Insert into Products (product_id,productname,description) values (67,'box','justname') </msg>
-<status status="PASS" starttime="20220318 12:56:36.284" endtime="20220318 12:56:37.151"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220318 16:11:50.855" endtime="20220318 16:11:50.983"/>
 </kw>
-<kw name="Row Count Is Equal To X" library="DatabaseLibrary">
-<arg>Select * from Products where product_id=67</arg>
-<arg>1</arg>
-<doc>Check if the number of rows returned from `selectStatement` is equal to the value submitted. If not, then this
-will throw an AssertionError. Set optional input `sansTran` to True to run command without an explicit
-transaction commit or rollback.</doc>
-<msg timestamp="20220318 12:56:37.151" level="INFO">Executing : Row Count Is Equal To X  |  Select * from Products where product_id=67  |  1 </msg>
-<msg timestamp="20220318 12:56:37.152" level="INFO">Executing : Row Count  |  Select * from Products where product_id=67 </msg>
-<status status="PASS" starttime="20220318 12:56:37.151" endtime="20220318 12:56:37.624"/>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220318 16:11:50.984" endtime="20220318 16:11:50.986"/>
 </kw>
-<status status="PASS" starttime="20220318 12:56:36.283" endtime="20220318 12:56:37.625"/>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220318 16:11:50.986" endtime="20220318 16:11:50.987"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=https://softwaretesting.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220318 16:11:50.987" level="INFO">Opening url 'https://softwaretesting.com'</msg>
+<status status="PASS" starttime="20220318 16:11:50.987" endtime="20220318 16:11:53.732"/>
+</kw>
+<kw name="SikuliLibrary.Input Text">
+<arg>${EMPTY}</arg>
+<arg>hello</arg>
+<msg timestamp="20220318 16:11:53.738" level="FAIL">No keyword with name 'SikuliLibrary.Input Text' found.</msg>
+<status status="FAIL" starttime="20220318 16:11:53.738" endtime="20220318 16:11:53.738"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220318 16:11:53.739" endtime="20220318 16:11:54.795"/>
+</kw>
+<status status="FAIL" starttime="20220318 16:11:50.070" endtime="20220318 16:11:54.795">No keyword with name 'SikuliLibrary.Input Text' found.</status>
 </test>
-<kw name="Disconnect From Database" library="DatabaseLibrary" type="TEARDOWN">
-<doc>Disconnects from the database.</doc>
-<msg timestamp="20220318 12:56:37.626" level="INFO">Executing : Disconnect From Database</msg>
-<status status="PASS" starttime="20220318 12:56:37.626" endtime="20220318 12:56:37.626"/>
-</kw>
-<status status="PASS" starttime="20220318 12:56:30.140" endtime="20220318 12:56:37.626"/>
+<status status="FAIL" starttime="20220318 16:11:29.902" endtime="20220318 16:11:54.797"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo1 Suite">Demo1 Suite</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demo11 Autoit Suite">Demo11 Autoit Suite</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220318 16:11:50.068" level="ERROR">Error in file '/home/indranee/Robotframework/selenium_suite/demo11_autoit_suite.robot' on line 3: Initializing library 'SikuliLibrary' with no arguments failed: Start sikuli java process failed!
+Traceback (most recent call last):
+  File "/home/indranee/.local/lib/python3.8/site-packages/SikuliLibrary/sikuli.py", line 54, in __init__
+    self.start_sikuli_process(port)
+  File "/home/indranee/.local/lib/python3.8/site-packages/SikuliLibrary/sikuli.py", line 92, in start_sikuli_process
+    raise RuntimeError('Start sikuli java process failed!')</msg>
 </errors>
 </robot>
